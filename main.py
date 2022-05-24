@@ -207,7 +207,7 @@ async def help(client, message):
         await message.reply_text("/start - Start The Bot\n/chat - Send a message to this bot\n/setupchat - Active 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot In Group\n/removechat - Disable 𝙉𝙚𝙩𝙝𝙮𝙖 Chatbot In Group")
 
 
-@bot.on_message(filters.command(["hallo"], prefixes=[none]))
+@bot.on_message(filters.command(["hallo"], prefixes=[None]))
 async def help(client, message):
     self = await bot.get_me()
     busername = self.username
